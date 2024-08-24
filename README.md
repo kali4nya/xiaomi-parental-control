@@ -4,7 +4,7 @@ simple python script to run on a home server that controls internet access for s
 
 everything to set up is explained in code
 
-**tested on xiaomi router 4A**
+**tested on xiaomi router 4A** and python 3.12
 
 ```python
 cutoff_time = "23:00" #time to cutoff internet access
