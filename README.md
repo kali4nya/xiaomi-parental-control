@@ -16,4 +16,4 @@ ip = '192.168.31.1' # <- repalce with your router ip (default is usually 192.168
 username = 'admin' #router username (for xiaomi routers, it's admin by default)
 password = 'password' # <- replace with your actuall router password
 ```
-If you have any problems/issues let me know, Im happy to help :3
+If you have any problems/issues/questions let me know, Im happy to help :3
