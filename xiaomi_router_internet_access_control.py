@@ -10,12 +10,16 @@ ip = '192.168.31.1' # <- repalce with your router ip (default is usually 192.168
 username = 'admin' #router username (for xiaomi routers, it's admin by default)
 password = 'password' # <- replace with your actuall router password
 
+macListAsString = ""
+for adres in mac:
+    macListAsString += adres + ", "
+
 print("program started")
 print("")
 print("cutoff time set to: " + cutoff_time)
 print("restore time set to: " + restore_time)
 print("")
-print("mac address set to: " + mac)
+print("mac address set to: " + macListAsString)
 print("")
 
 def login(ip, username, password):
