@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Internet access menagement</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Internet access menagement site</h1>
+    </header>
+    
+    <section>
+        <form id="userForm">
+            <label for="devices">Devices:</label>
+            <input type="text" id="devices" name="devices" placeholder="Enter device macs (separated by a comma , )" required><br><br>
+        
+            <label for="cutoff">Cutoff Time:</label>
+            <select id="cutoffHours" required>
+                <option value="">Select Hour</option>
+                <!-- Generate options for hours 00-23 -->
+                <script>
+                    for (let i = 0; i < 24; i++) {
+                        // Generate options with leading zeros
+                        document.write(`<option value="${i < 10 ? '0' + i : i}">${i < 10 ? '0' + i : i}</option>`);
+                    }
+                </script>
+            </select>
+        
+            <select id="cutoffMinutes" required>
+                <option value="">Select Minute</option>
+                <!-- Generate options for minutes 00-55 in steps of 5 -->
+                <script>
+                    for (let i = 0; i < 60; i += 5) {
+                        document.write(`<option value="${i < 10 ? '0' + i : i}">${i < 10 ? '0' + i : i}</option>`);
+                    }
+                </script>
+            </select><br><br>
+        
+            <label for="restore">Restore Time:</label>
+            <select id="restoreHours" required>
+                <option value="">Select Hour</option>
+                <!-- Generate options for hours 00-23 -->
+                <script>
+                    for (let i = 0; i < 24; i++) {
+                        // Generate options with leading zeros
+                        document.write(`<option value="${i < 10 ? '0' + i : i}">${i < 10 ? '0' + i : i}</option>`);
+                    }
+                </script>
+            </select>
+        
+            <select id="restoreMinutes" required>
+                <option value="">Select Minute</option>
+                <!-- Generate options for minutes 00-55 in steps of 5 -->
+                <script>
+                    for (let i = 0; i < 60; i += 5) {
+                        document.write(`<option value="${i < 10 ? '0' + i : i}">${i < 10 ? '0' + i : i}</option>`);
+                    }
+                </script>
+            </select><br><br>
+        
+            <button type="button" id="myButton">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
