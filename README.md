@@ -21,6 +21,7 @@ in this version there is an interface that the user can access on "{serverIP}:{p
 by default the port is set to 8000, the interface loads data from the program everytime it is loaded
 and sets data to server everytime the 'Submit' button is clicked, devices in the list in the interface
 need to be seperated by commas
+
 interface:
 
 ![image](https://github.com/user-attachments/assets/d6ad75da-e49b-4131-b2e3-39167af6b167)
