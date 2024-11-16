@@ -14,7 +14,7 @@ mac = ['2C:F0:5D:72:BF:F0', 'E6:45:8B:93:84:3D', '2C:D9:74:1B:85:DF']  # <- Repl
 ip = '192.168.31.1'  # <- Replace with your router IP (default is usually 192.168.31.1)
 username = 'admin'  # Router username (for Xiaomi routers, it's admin by default)
 password = 'password'  # <- Replace with your actual router password
-host_an_interface_server = True
+host_an_interface_server = True  # <- pretty self explanatory 
 server_port = 8000
 
 macListAsString = ""
